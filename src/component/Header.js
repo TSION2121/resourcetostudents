@@ -1,0 +1,45 @@
+import { StyledHeader, Nav, Logo, Image, StyledLogoDefinitions } from '../styles/Header.styled'
+import { Container } from '../styles/Container.styled'
+import {  FlexHeader, FlexParagraph, FlexPromo, Share } from '../styles/Flex.styled'
+import { Button } from '../styles/Button.styled'
+import image from '../assets/image/logo.jpg'
+import Promotion from './promo/Promotion'
+
+export default function Header() {
+  return (
+    <StyledHeader>
+      <Container>
+        <Nav>
+          <Logo src={image} alt='' /> <StyledLogoDefinitions>Students And Resources</StyledLogoDefinitions>
+
+          <Button size='20px' bg='navy' color='white' border='20' margin='40px' >    StAR</Button>
+          {/* <Button>Try It Free</Button> */}
+        </Nav>
+
+        <FlexHeader>
+          <div>
+            <h1>We are Here for you ,<br/>
+              Get your Study Resources from StAR</h1>
+            {/* <h1>Link and Save The Community  with the right resources</h1> */}
+
+            <FlexParagraph>
+              StAR let the clients shine with our accurate and simple services  . We do researchs as of you  and
+               save the costs of searching for the right resources at the right time.
+              </FlexParagraph>  <br/>
+               <Button bg='royalblue' color='#fff' >
+             {/* Share your Experience */}
+             Get our Services
+            </Button>
+              
+
+            
+          </div>
+
+          <Image  src={image} alt='' />
+        </FlexHeader>
+       <Promotion />
+          
+      </Container>
+    </StyledHeader>
+  )
+}

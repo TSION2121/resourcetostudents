@@ -1,0 +1,24 @@
+[   
+    {
+           "id"  : 1,
+           " title" :"Who we are",
+            "date" :"September 7, 2022",
+          "content" :"StAR is formulated  on the basis to minmize the gap between searching for materials and getting the right resources. Currently it's ready to be released for students, particularly focusing on Physics areas. We promised that we  come up with other respective subjects in the future, but  currently we are working on linking you with the right materials for your studying physics to be easy and approachable",
+          "pic":"{logo}"
+         
+       },
+     {
+           "id"  : 2,
+            "date" : "April 24 to May 02, 2021",
+        "title" : " Enhancing Diaspora connection for Science and Technology Development",
+        "content" : "Following the invitation of the Prime Minister,Dr. Abiy Ahmed, members of the Diaspora who have returned home are making various efforts to ensure the security of their country and contribute to the development and growth of our country. In connection with this, members...",
+    "pic": "image"
+       }
+       ,
+     {
+           "id"  : 3,
+            "date" :"August 12, 2022",
+            "title" : "Addis Ababa Science and Technology University and IIT ROORKEE Sign Partnership Agreement",
+           "content" : "Addis Ababa Science and Technology University has signed a partnership agreement with IIT ROORKEE.During the commencement of the ceremony, Prof.M. Parida deputy director of IIT ROORKEE briefly introduced the typical identities of and capacities of the Indian Institute of Technology–Roorkee ",
+           "pic":"image2"
+       }]
