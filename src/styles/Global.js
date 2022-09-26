@@ -11,9 +11,14 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     font-size: 1.15em;
     margin: 0;
+    justify-content: center;
+    align-items: center;
+    display:
+    flex-direction: column;
+
     @media (max-width: ${({ theme }) => theme.mobile}) {
       flex-direction: column;
-    }
+    }    
   }
 
   p {

@@ -14,6 +14,7 @@ import NotFound from '../NotFound/NotFound'
 import Card from '../../component/Card'
 import content from '../../Data/content'
 import Footer from '../../component/Footer'
+import { StyledFooter } from '../../styles/Footer.styled'
 export const Services = ({clicked}) => {
 
 
@@ -84,9 +85,11 @@ export const Services = ({clicked}) => {
 
 
         <Container>
-<Promotion /></Container>
-<Footer />
-
+      <Promotion />
+</Container>
+<StyledFooter   top='100px'>
+<Footer  />
+</StyledFooter>
     </div>
   )
 }

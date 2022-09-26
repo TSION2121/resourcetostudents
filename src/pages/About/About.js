@@ -98,7 +98,8 @@ export const About = (props) => {
   )})}
   
     {/* < Cards /> */}
-    </Grid>  
+    </Grid> 
+     
     <Footer />
       </div>
   )
