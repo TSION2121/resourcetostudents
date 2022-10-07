@@ -1,7 +1,7 @@
 import { Button } from '@mui/material'
 import React from 'react'
 import Card from '../../../component/ServicesCard'
-import content from '../../../Data/content'
+import experiments from '../../../Data/Services/ExperimentData'
 import { Container } from '../../../styles/Container.styled'
 import { StyledButtons } from '../../../styles/NavBarHeader.styled'
 const Experiments = () => {
@@ -33,7 +33,7 @@ const Experiments = () => {
     Physics Experiments
     </Button></StyledButtons>
     <Container>
-  {content.map((item, index) => (
+  {experiments.map((item, index) => (
             
           
     clicked  && <Card key={index} item={item} /> 

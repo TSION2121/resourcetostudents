@@ -1,5 +1,5 @@
 import { AspectRatio, Box, Button, Card, IconButton, Typography } from '@mui/joy';
-import { CardContent, CardHeader, CardMedia } from '@mui/material';
+import { Avatar, CardContent, CardHeader, CardMedia } from '@mui/material';
 import React from 'react'
 // import { StyledImage } from '../../styles/NavBarHeader.styled';
 import CardDate from './CardDate';
@@ -9,26 +9,28 @@ import { StyledReadMoreButtons } from '../../styles/NavBarHeader.styled';
 import { StyledCard } from '../../styles/Card.styled';
 import { About } from '../../pages/About/About';
 import { Home } from '../../trash/Home';
+import CardRole from './CardRole';
+import { RoleCardTitle } from '../../styles/About.styled';
 
 
 
 
 
-const ReusableCard = (props) => {
+const TeamCard = (props) => {
 
-    const {id,title,content,date, image} = props;
+    const {id,content, avatar , name , role} = props;
 
-   const [clicked,setClicked] = React.useState(false)
-  // const clicked = props.clicked;
+   const [clickede,setClickede] = React.useState(false)
+  // const clickede = props.clickede;
 
-  if (clicked) {
+  if (clickede) {
    return <About />
    //to be replaced by the other details
   }
 
   let readMore;
 
-  if (clicked) {
+  if (clickede) {
     readMore = <About />;
   } else {
     readMore = "Read More";
@@ -36,7 +38,7 @@ const ReusableCard = (props) => {
  
 
    const handleClick = () => {
-setClicked(()=> !clicked);
+setClickede(()=> !clickede);
    }
 
 
@@ -49,17 +51,15 @@ setClicked(()=> !clicked);
     variant="contained"
     sx={{ 
       // minWidth: '550px',
-      borderRadius: '50px',
-      opacity: '7',
-      backgroundColor: 'black', 
-      color: 'white',
+      borderRadius: '190px',
+      backgroundColor: 'lightblue', 
       position: 'relative', 
       wordSpacing: '0.5rem', 
       display: 'flex',
       // objectFit:'cover',
       // backgroundSize:'cover', 
       flexDirection: 'column',
-      height: 'fit-content',
+      height: 'auto',
       justifyContent: 'left',
       fontSize: '30px',
       width: 'fit-content',
@@ -77,21 +77,14 @@ setClicked(()=> !clicked);
     >
 
     
-    <AspectRatio
-    ratio='16/7'
-          objectFit="contain" 
+<AspectRatio>
+ <Avatar 
+ alt="helo"
+ src={avatar}
+ />
+</AspectRatio>  
+    
 
-    >
-      <CardMedia
-      // sx={{
-      //   backgroundSize:'cover',
-      //   backgroundRepeat:'no-repeat'
-      // }}
-    image={        
-        image
-    }
-    ></CardMedia>  
-    </AspectRatio>
     <Box
      sx={{ 
         display: 'flex', 
@@ -100,16 +93,11 @@ setClicked(()=> !clicked);
     >
 
     
-    <CardDate
-     date ={date}
-     
-    >
 
-    </CardDate>
     <CardHeader
     title={
       <Typography 
-      children={title}
+      children={name}
       level="h1"
       fontSize="xl"
     
@@ -118,12 +106,17 @@ setClicked(()=> !clicked);
       // fontSize:"25px",
       // fontWeight:"1000", 
       fontWeight:'900',
-      fontSize: '130px',
+      fontSize: '70px',
     }} />
     }
     //consitency like Typography
     >
         </CardHeader> 
+        <RoleCardTitle>
+        <CardRole
+role={role}
+
+></CardRole></RoleCardTitle>
     </Box>
     <Box
      sx={{
@@ -143,24 +136,11 @@ setClicked(()=> !clicked);
   fontWeight:"400", }}
     ></CardContent>
     </Box>
-   <StyledReadMoreButtons>
-      <Button
-          onClick={handleClick}
-          variant="outlined"
-          size="sm"
-        
-          aria-label="Explore Bahamas Islands"
-        children={clicked?<About />:<Home /> }
-        >
-         {readMore}<IconButton >
-<ArrowForwardTwoToneIcon />
-          </IconButton>
-        </Button>
-        </StyledReadMoreButtons>
+   
     </Card>
     {/* </StyledCard> */}
     </>
   )
 }
 
-export default ReusableCard
+export default TeamCard

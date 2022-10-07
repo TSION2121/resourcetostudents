@@ -48,10 +48,10 @@ export default function Card({ item: { id, title, body,source, videoTitle,video,
       <div>
         <h2>
           
-        <StyledCardTitle  href={url}>{title}</StyledCardTitle>
+        <StyledCardTitle  >{title}</StyledCardTitle>
         </h2>
         <StyledCardBody>{body}</StyledCardBody>
-<StyledCardSource>From:{source}</StyledCardSource>
+<StyledCardSource href={url}>From:{source}</StyledCardSource>
       </div>
 
       <div>

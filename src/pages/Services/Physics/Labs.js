@@ -1,9 +1,10 @@
 import { Button } from '@mui/material'
 import React from 'react'
 import { StyledButtons } from '../../../styles/NavBarHeader.styled'
-import content from '../../../Data/content'
+// import content from '../../../Data/content'
 import { Container } from '../../../styles/Container.styled'
 import Card from '../../../component/ServicesCard'
+import labs from '../../../Data/Services/LabsData'
 const Labs = () => {
   const [clicked,setClicked] = React.useState(false)
 
@@ -33,7 +34,7 @@ const Labs = () => {
     Physics Labs
     </Button></StyledButtons>
     <Container>
-  {content.map((item, index) => (
+  {labs.map((item, index) => (
             
           
     clicked  && <Card key={index} item={item} /> 

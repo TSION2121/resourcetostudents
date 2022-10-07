@@ -1,17 +1,34 @@
 import { Button } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Card from '../../../component/ServicesCard'
-import concepts from '../../../Data/Services/ConceptData'
+
+import content from '../../../Data/content'
+//to be changed
 import { Container } from '../../../styles/Container.styled'
-const Concepts = () => {
+import { StyledCardTitle } from '../../../styles/ServicesCard.styled'
+const DigitalLab = () => {
   const [clicked,setClicked] = React.useState(false)
+//   const navigate = useNavigate() 
+        // useEffect(() => { return (
+
+        // // setTimeout(()=>{
+        // // //   navigate("/digitalLab",
+        // // //    ) 
+
+        // // },1000)
+        //  ) },[])
 
   const handleBooks = ()=> {
+
+
+      
+
+
     return ( setClicked(!clicked
  ))}
   return (
     <div>
-      
            <Button
              //  aria-controls={open ? 'fade-menu' : undefined}
       //  aria-haspopup="true"
@@ -25,20 +42,23 @@ const Concepts = () => {
       // onChange={clicked}
                                  
        variant="text"  
-       children={clicked? <Card /> : null}
-      href="/services/concepts"  
+    //    children={clicked? <Card /> : null}
+      href="/digitalLAB"  
            >
-    Physics Concepts
+           Our Digital Lab
     </Button>
     <Container>
-  {concepts.map((item, index) => (
+  {
             
           
-    clicked  && <Card key={index} item={item} /> 
-    ))}
+    clicked  &&     alert(" NOT Developed YET Will Be Released IN PROCESS")
+}
+ 
+
+{/* <StyledCardTitle> NOT Developed YET Will Be Released IN PROCESS</StyledCardTitle> */}
 </Container>
-      </div>
+     </div>
   )
 }
 
-export default Concepts
+export default DigitalLab

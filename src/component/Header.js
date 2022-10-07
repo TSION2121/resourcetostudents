@@ -1,9 +1,11 @@
 import { StyledHeader, Nav, Logo, Image, StyledLogoDefinitions } from '../styles/Header.styled'
 import { Container } from '../styles/Container.styled'
 import {  FlexHeader, FlexParagraph, FlexPromo, Share } from '../styles/Flex.styled'
-import { Button } from '../styles/Button.styled'
+// import { Buttons } from '../styles/Button.styled'
 import image from '../assets/image/logo.jpg'
 import Promotion from './promo/Promotion'
+import { Button } from '@mui/material'
+import { ButtonsStyled } from '../styles/Button.styled'
 
 export default function Header() {
   return (
@@ -12,7 +14,7 @@ export default function Header() {
         <Nav>
           <Logo src={image} alt='' /> <StyledLogoDefinitions>Students And Resources</StyledLogoDefinitions>
 
-          <Button size='20px' bg='navy' color='white' border='20' margin='40px' >    StAR</Button>
+          <ButtonsStyled size='20px' bg='navy' color='white' border='20' margin='40px' >    StAR</ButtonsStyled>
           {/* <Button>Try It Free</Button> */}
         </Nav>
 
@@ -26,10 +28,12 @@ export default function Header() {
               StAR let the clients shine with our accurate and simple services  . We do researchs as of you  and
                save the costs of searching for the right resources at the right time.
               </FlexParagraph>  <br/>
-               <Button bg='royalblue' color='#fff' >
+             <ButtonsStyled bg='royalblue' color='black' href="services">
+               
+               
              {/* Share your Experience */}
              Get our Services
-            </Button>
+            </ButtonsStyled>
               
 
             

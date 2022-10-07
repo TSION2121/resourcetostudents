@@ -15,6 +15,7 @@ import Card from '../../component/Card'
 import content from '../../Data/content'
 import Footer from '../../component/Footer'
 import { StyledFooter } from '../../styles/Footer.styled'
+import DigitalLab from './OurDigitalLabs/DigitalLab'
 export const Services = ({clicked}) => {
 
 
@@ -45,6 +46,12 @@ export const Services = ({clicked}) => {
   return (
     <div>
      
+  <StyledButtons>
+<DigitalLab
+// onClick={handleConcepts}
+/>
+  </StyledButtons>
+
       <div>
         <Books clicked={false}
         

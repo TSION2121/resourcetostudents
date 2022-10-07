@@ -1,7 +1,7 @@
 import { Button } from '@mui/material'
 import React from 'react'
 import Card from '../../../component/ServicesCard'
-import content from '../../../Data/content'
+import visuals from '../../../Data/Services/VisualsData'
 import { Container } from '../../../styles/Container.styled'
 const Visuals = () => {
   const [clicked,setClicked] = React.useState(false)
@@ -30,7 +30,7 @@ const Visuals = () => {
     Physics Visuals
     </Button>
     <Container>
-  {content.map((item, index) => (
+  {visuals.map((item, index) => (
             
           
     clicked  && <Card key={index} item={item} /> 

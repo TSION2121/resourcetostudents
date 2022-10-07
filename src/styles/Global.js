@@ -11,10 +11,11 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     font-size: 1.15em;
     margin: 0;
-    justify-content: center;
-    align-items: center;
-    display:
-    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // display:flex
+    // flex-direction: column;
+    // background-image: url('https://images.pexels.com/photos/1998922/pexels-photo-1998922.jpeg?auto=compress&cs=tinysrgb&w=600');
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
       flex-direction: column;

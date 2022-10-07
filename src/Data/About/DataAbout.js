@@ -2,7 +2,7 @@ import image from '../../assets/image/Founders.jpg'
   import logo from '../../assets/image/logo.jpg'
   import resource from '../../assets/image/resource.jpg'
 
-const about = [   
+export const about = [   
     {
           id  : 1,
            title :"Who we are",
@@ -11,22 +11,35 @@ const about = [
           pic:logo
          
        },
-     {
-          id  : 2,
-            date : "April 24 to May 02, 2021",
-        title : " Enhancing Diaspora connection for Science and Technology Development",
-        content : "Following the invitation of the Prime Minister,Dr. Abiy Ahmed, members of the Diaspora who have returned home are making various efforts to ensure the security of their country and contribute to the development and growth of our country. In connection with this, members...",
-    pic:image
-       }
-       ,
-     {
-          id  : 3,
-            date :"August 12, 2022",
-            title : "Addis Ababa Science and Technology University and IIT ROORKEE Sign Partnership Agreement",
-           content : "Addis Ababa Science and Technology University has signed a partnership agreement with IIT ROORKEE.During the commencement of the ceremony, Prof.M. Parida deputy director of IIT ROORKEE briefly introduced the typical identities of and capacities of the Indian Institute of Technology–Roorkee ",
-           pic:resource
-       }]
+    ]
 
 
-       export default about
 
+
+
+
+export const team = [   
+    {
+          id  : 1,
+          //  title :"Our Team",
+            name :"Asmamaw ",
+            role : "Founder",
+          content :" Asmamaw has graduated from AASTU in Mechanical Engineering",
+          avatar:logo
+         
+       },
+       {
+        id  : 2,
+        //  title :"Our Team",
+          name :"Tsion Bizuayehu",
+          role : "Developer",
+        content :"Tsion is a Software Enginneering Student at AASTU",
+        avatar:resource
+       
+     },
+    ]
+
+
+     
+
+       
